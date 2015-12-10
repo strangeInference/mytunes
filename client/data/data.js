@@ -1,22 +1,22 @@
 // data.js - Defines an array of data regarding song files and their accompanying details.
 var songData = [
   {
-    url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/04+One+In+A+Million.mp3",
+    url: "http://cd09.128.music.static.jango.com/music/10/30/37/1030378636.mp3",
     title: "One In A Million",
     artist: "Aaliyah",
   },
   {
-    url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/03+Age+Ain%27t+Nothing+But+A+Number.mp3",
+    url: "http://download.musicmp3.ru/5b02d543d613ce2a08e3ac53a81d0186/07-Age_Aint_Nothing_But_A_Number.mp3",
     title: "Age Ain't Nothing But A Number",
     artist: "Aaliyah",
   },
   {
-    url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/05+Hot+Like+Fire.mp3",
+    url: "http://music.freedomofspeakdesign.com/Hot_Like_Fire.mp3",
     title: "Hot Like Fire",
     artist: "Aaliyah",
   },
   {
-    url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/06+If+Your+Girl+Only+Knew.mp3",
+    url: "http://www.thecurbcrawlers.com/audio/dec2007/if_that_girl_rmx.mp3",
     title: "If Your Girl Only Knew",
     artist: "Aaliyah",
   }

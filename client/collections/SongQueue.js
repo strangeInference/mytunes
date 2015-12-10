@@ -3,6 +3,7 @@ var SongQueue = Songs.extend({
 
   initialize: function() {
     this.on('add', function() {
+      console.log('adding')
       if (this.models.length === 1) {
         this.playFirst();
       }
@@ -18,9 +19,13 @@ var SongQueue = Songs.extend({
     }, this);
 
   // this is not functional, just passes specs
-    this.on('dequeue', function() {
-      this.remove();
-    });
+    this.on('dequeue', this.dequeue, this);
+
+  // on enqueue... 
+  // this.on('enqueue', function(songModel){
+  //   console.log('SongQueue listener');
+  //   this.enqueue(songModel);
+  // }, this); 
 
   },
 
@@ -28,8 +33,14 @@ var SongQueue = Songs.extend({
     this.at(0).play();
   },
 
-  dequeue: function(){
-    this.remove();
-  }
+  dequeue: function(songModel){
+    console.log('SongQueue');
+    this.remove(songModel);
+  },
+
+  // enqueue: function(songModel){
+  //   console('SongQueue function')
+  //   this.add(songModel);
+  // }
 
 });

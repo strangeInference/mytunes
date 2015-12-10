@@ -7,14 +7,17 @@ var SongModel = Backbone.Model.extend({
   },
 
   ended: function() {
+    console.log('SongModel');
     this.trigger('ended', this);
   },
 
   dequeue: function() {
+    //console.log('SongModel');
     this.trigger('dequeue', this);
   },
 
   enqueue: function() {
+    //console.log('SongModel');
     this.trigger('enqueue', this)
   }
 
